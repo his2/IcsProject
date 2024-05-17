@@ -11,6 +11,10 @@ public class Main {
          *  "tSSH.py -t https://dss.%s.concur.global -u ${USER:u} -s %s\\\\${USER:u}-a -v -d bast.service.cnqr.tech \"curl -X 'GET' 'https://financial-integration.service.cnqr.tech/fi/v1/companies/1/transactiontypes/expense/transactions?limit=0&docId=%s&ignoreDocumentStatus=yes' -H 'accept: application/json' -H 'documentFormatAs: json' -H 'Authorization: Bearer $JWT'\" > ~/Downloads/%s.json";
          */
 
+        /*
+        We have officially entered github.
+         */
+
         String env = args[0];
         String docId = args[1];
         String fileName = args[2];
