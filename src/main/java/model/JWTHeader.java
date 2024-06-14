@@ -1,4 +1,4 @@
-package main.model;
+package model;
 //model for: JWT=$(hmcOktaJWT.py -o cnqr.okta.com -H 'HMC - US2' -e p00849947wds -R 22717526)
 public class JWTHeader {
     private String PythonCall;

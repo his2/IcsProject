@@ -1,4 +1,4 @@
-package main.model;
+package model;
 //not sure why we have this URL when there is one above it in the Curl class
 public class URLCommand {
     private String URLs;
