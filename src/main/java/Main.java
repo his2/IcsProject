@@ -1,8 +1,4 @@
-package main;
-
-import main.model.IcsExpenseQuery;
-
-import static main.Constants.BASE_URL_FINANCIAL_INTEGRATION;
+import model.IcsExpenseQuery;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,7 +23,7 @@ public class Main {
 
         IcsExpenseQuery query = new IcsExpenseQuery(api, apiVersion, path, limitQuery, docId, ignoreDocumentStatusQuery);
 
-        System.out.println(String.format("%s/%s", BASE_URL_FINANCIAL_INTEGRATION, query.toRunnable()));
+        System.out.println(String.format("%s/%s", Constants.BASE_URL_FINANCIAL_INTEGRATION, query.toRunnable()));
 
         // https://financial-integration.service.cnqr.tech/fi/v1/companies/1/transactiontypes/expense/transactions?limit=0&docId=5833B65A4C374FA3A86A&ignoreDocumentStatus=yes
     }
